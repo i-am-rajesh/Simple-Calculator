@@ -21,7 +21,7 @@ This is a simple calculator web application built using HTML, CSS, Bootstrap, Ja
 
 ## Demo
 
-You can view a live demo of this calculator application [here](https://example.com).
+You can view a live demo of this calculator application [here]([https://example.com](https://i-am-rajesh.github.io/Simple-Calculator/)).
 
 ## Customization
 
