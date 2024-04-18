@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- JS -->
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity ="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ==" crossorigin = "anonymous" referrerpolicy = "no-referrer" > </script> 
+     <script src ="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js" integrity ="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA==" crossorigin = "anonymous" referrerpolicy = "no-referrer" > </script> 
+</head>
+<body>
+    <div class="container m-5">
+        <div class="calculator">
+            <div class="bg-black text-white">
+                <input type="text" id="result">
+            </div>
+            <div id="calcu" class="buttons">
+                <div class="row row-1 mt-3">
+                    <button class="col btn btn-outline-success mr-2" value="7" onclick="dis('7')" onkeydown="myFunction(event)">7</button>
+                    <button class="col btn btn-outline-success mr-2" value="8" onclick="dis('8')" onkeydown="myFunction(event)">8</button>
+                    <button class="col btn btn-outline-success mr-2" value="9" onclick="dis('9')" onkeydown="myFunction(event)">9</button>
+                    <button class="col btn btn-outline-success" value="C" onclick="clr()">C</button>
+                </div>
+                <div class="row row-2 mt-2">
+                    <button class="col btn btn-outline-success mr-2" value="4" onclick="dis('4')" onkeydown="myFunction(event)">4</button>
+                    <button class="col btn btn-outline-success mr-2" value="5" onclick="dis('5')" onkeydown="myFunction(event)">5</button>
+                    <button class="col btn btn-outline-success mr-2" value="6" onclick="dis('6')" onkeydown="myFunction(event)">6</button>
+                    <button class="col btn btn-outline-success" value="+" onclick="dis('+')" onkeydown="myFunction(event)">+</button>
+                </div>
+                <div class="row row-3 mt-2">
+                    <button class="col btn btn-outline-success mr-2" value="1" onclick="dis('1')" onkeydown="myFunction(event)">1</button>
+                    <button class="col btn btn-outline-success mr-2" value="2" onclick="dis('2')" onkeydown="myFunction(event)">2</button>
+                    <button class="col btn btn-outline-success mr-2" value="3" onclick="dis('3')" onkeydown="myFunction(event)">3</button>
+                    <button class="col btn btn-outline-success" value="-" onclick="dis('-')" onkeydown="myFunction(event)">-</button>
+                </div>
+                <div class="row row-4 mt-2">
+                    <button class="col btn btn-outline-success mr-2" value="0" onclick="dis('.')" onkeydown="myFunction(event)">.</button>
+                    <button class="col btn btn-outline-success mr-2" value="*" onclick="dis('*')" onkeydown="myFunction(event)">*</button>
+                    <button class="col btn btn-outline-success mr-2" value="/" onclick="dis('/')" onkeydown="myFunction(event)">/</button>
+                    <button class="col btn btn-outline-success" value="%" onclick="dis('%')" onkeydown="myFunction(event)">%</button>
+                </div>
+                <div class="row row-5 mt-2">
+                    <button class="col-3 mr-2 btn btn-outline-success" value="=" onclick="dis('0')" onkeydown="myFunction(event)">0</button>
+                    <button class="col-3 mr-2 btn btn-outline-success" value="=" onclick="dis('00')" onkeydown="myFunction(event)">00</button>
+                    <button class="col btn btn-outline-success" value="=" onclick="solve()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
